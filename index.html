@@ -3,15 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
+    <title>Edwin - Ingeniero de Sistemas</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://example.com/tu-imagen-de-fondo.jpg'); /* Reemplaza con la URL de tu imagen */
+            background-size: cover;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Contenedor principal */
+        .contenedor {
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 5% auto;
+            width: 80%;
+        }
+
+        /* Títulos y textos */
+        h1 {
+            color: #FFA500; /* Naranja */
+            font-size: 3em;
+        }
+
+        h2 {
+            color: #FFA500;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        /* Barras de progreso */
+        .barra {
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progreso {
+            height: 25px;
+            background-color: #FFA500;
+            width: 0;
+            transition: width 1s ease-in-out;
+        }
+
+        /* Estilo para los porcentajes */
+        .barra span {
+            line-height: 25px;
+            padding-left: 10px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Hola! Soy Edwin</h1>
-    <p>Bienvenido a mi página personal. Soy estudiante de Ingeniería de Sistemas y Telecomunicaciones en la Universidad de Manizales.</p>
-    <ul>
-        <li>Lenguajes: SQL, Python, JavaScript, Java</li>
-        <li>Intereses: Redes, desarrollo web, bases de datos</li>
-    </ul>
+
+    <div class="contenedor">
+        <h1>¡Hola! Soy Edwin</h1>
+        <p>Estudiante de Ingeniería de Sistemas en la Universidad de Manizales.</p>
+        <h2>Mis habilidades</h2>
+        <p>A continuación te muestro mis habilidades y el nivel de manejo que tengo en cada una:</p>
+
+        <!-- Barra de progreso para inglés -->
+        <h3>Inglés - 70%</h3>
+        <div class="barra">
+            <div class="progreso" style="width: 70%;"><span>70%</span></div>
+        </div>
+
+        <!-- Barra de progreso para alemán -->
+        <h3>Alemán - 80%</h3>
+        <div class="barra">
+            <div class="progreso" style="width: 80%;"><span>80%</span></div>
+        </div>
+
+        <!-- Barra de progreso para otra habilidad (puedes añadir más) -->
+        <h3>Python - 90%</h3>
+        <div class="barra">
+            <div class="progreso" style="width: 90%;"><span>90%</span></div>
+        </div>
+
+        <h3>JavaScript - 75%</h3>
+        <div class="barra">
+            <div class="progreso" style="width: 75%;"><span>75%</span></div>
+        </div>
+
+        <h3>SQL - 85%</h3>
+        <div class="barra">
+            <div class="progreso" style="width: 85%;"><span>85%</span></div>
+        </div>
+
+    </div>
+
+    <script>
+        // Para animar las barras de progreso
+        window.onload = function() {
+            let barras = document.querySelectorAll('.progreso');
+            barras.forEach(function(barra) {
+                let width = barra.style.width;
+                barra.style.width = '0';
+                setTimeout(function() {
+                    barra.style.width = width;
+                }, 500);
+            });
+        };
+    </script>
+
 </body>
 </html>
 
