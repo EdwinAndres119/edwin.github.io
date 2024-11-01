@@ -9,7 +9,7 @@
         body {
             font-family: Arial, sans-serif;
             background-image: url('https://tse3.mm.bing.net/th?id=OIG2.jRNgaRCzCkwKt9mBvg6s&pid=ImgGn');
-            background-size: 200px 200px;
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -110,7 +110,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        // Gráfico de radar
+        // Configuración y creación del gráfico de radar
         const ctx = document.getElementById('myChart').getContext('2d');
         const myChart = new Chart(ctx, {
             type: 'radar',
@@ -119,22 +119,43 @@
                 datasets: [{
                     label: 'Habilidades',
                     data: [70, 80, 90, 75, 85], // Porcentajes de habilidades
-                    backgroundColor: 'rgba(255, 165, 0, 0.2)', // Color de fondo del gráfico
-                    borderColor: 'rgba(255, 165, 0, 1)', // Color de línea del gráfico
-                    borderWidth: 2
+                    backgroundColor: 'rgba(255, 165, 0, 0.2)', // Fondo semitransparente
+                    borderColor: 'rgba(255, 165, 0, 1)', // Color de borde del gráfico
+                    borderWidth: 3
                 }]
             },
             options: {
-                scale: {
-                    ticks: {
-                        beginAtZero: true,
-                        max: 100, // Máximo valor
-                        stepSize: 10 // Intervalo entre ticks
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        ticks: {
+                            beginAtZero: true,
+                            max: 100, // Valor máximo en la escala
+                            stepSize: 10, // Intervalo de valores
+                            color: '#530062' // Color de los valores en la escala
+                        },
+                        grid: {
+                            color: 'rgba(83, 0, 98, 0.3)' // Color y transparencia de las líneas de la escala
+                        },
+                        angleLines: {
+                            color: 'rgba(83, 0, 98, 0.5)' // Color de las líneas angulares
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#530062', // Color del texto de la leyenda
+                            font: {
+                                size: 14
+                            }
+                        }
                     }
                 }
             }
         });
-    </script>
+    </script>    
 
 </body>
 </html>
