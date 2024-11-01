@@ -90,7 +90,7 @@
         }
 
         .redes-sociales img {
-            width: 30px; /* Ajusta el tamaño de los iconos */
+            width: 60px; /* Ajusta el tamaño de los iconos */
             margin: 0 10px; /* Espaciado entre iconos */
             transition: transform 0.3s; /* Transición para el efecto hover */
         }
@@ -122,8 +122,9 @@
             <a href="LINK_DE_WHATSAPP" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
             </a>
+            <!-- Cambiar URL del icono de LinkedIn -->
             <a href="LINK_DE_LINKEDIN" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
             </a>
         </div>
     </div>
@@ -195,7 +196,17 @@
                     ticks: {
                         beginAtZero: true,
                         max: 100, // Máximo valor
-                        stepSize: 10 // Intervalo entre ticks
+                        stepSize: 10, // Intervalo entre ticks
+                        color: 'white', // Cambiar color de los ticks
+                        font: {
+                            size: 14 // Cambiar tamaño de los ticks
+                        }
+                    },
+                    pointLabels: {
+                        color: 'white', // Cambiar color de las etiquetas
+                        font: {
+                            size: 16 // Cambiar tamaño de las etiquetas
+                        }
                     }
                 }
             }
