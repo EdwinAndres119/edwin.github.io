@@ -21,35 +21,35 @@
 
         /* Contenedor principal */
         .contenedor {
-            background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+            background-color: rgba(0, 0, 0, 0.6);
             padding: 20px;
             border-radius: 10px;
-            margin: 20px; /* Espaciado en los márgenes */
+            margin: 20px;
         }
 
         /* Ventana rectangular flotante */
         .ventana {
-            background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
-            border-radius: 10px; /* Bordes redondeados */
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
             padding: 20px;
-            margin: 20px auto; /* Centrar horizontalmente */
+            margin: 20px auto;
             width: 80%;
-            max-width: 300px; /* Ancho máximo de la ventana */
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
+            max-width: 300px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
 
         /* Estilo de la imagen circular */
         .imagen-circular {
-            width: 150px; /* Tamaño del círculo */
-            height: 150px; /* Tamaño del círculo */
+            width: 150px;
+            height: 150px;
             overflow: hidden;
-            border-radius: 50%; /* Hace que sea un círculo */
-            margin: 0 auto; /* Centrar el círculo */
+            border-radius: 50%;
+            margin: 0 auto;
         }
 
         .imagen-circular img {
-            width: 100%; /* Hace que la imagen llene el círculo */
-            height: auto; /* Mantiene la proporción */
+            width: 100%;
+            height: auto;
         }
 
         /* Títulos y textos */
@@ -58,11 +58,11 @@
         }
 
         h2 {
-            color: #FFA500; /* Color del subtítulo */
+            color: #FFA500;
         }
 
         h3 {
-            margin: 10px 0; /* Espaciado entre habilidades */
+            margin: 10px 0;
         }
 
         p {
@@ -84,25 +84,25 @@
             transition: width 1s ease-in-out;
         }
 
-        /* Estilo para los botones de redes sociales */
+        /* Redes sociales */
         .redes-sociales {
             margin: 20px 0;
         }
 
         .redes-sociales img {
-            width: 60px; /* Ajusta el tamaño de los iconos */
-            margin: 0 10px; /* Espaciado entre iconos */
-            transition: transform 0.3s; /* Transición para el efecto hover */
+            width: 60px;
+            margin: 0 10px;
+            transition: transform 0.3s;
         }
 
         .redes-sociales img:hover {
-            transform: scale(1.1); /* Aumentar ligeramente el icono al pasar el ratón */
+            transform: scale(1.1);
         }
 
         /* Estilo para el gráfico de radar */
         #myChart {
-            max-width: 400px; /* Ancho máximo del gráfico */
-            margin: 20px auto; /* Centrar el gráfico */
+            max-width: 400px;
+            margin: 20px auto;
         }
     </style>
 </head>
@@ -122,9 +122,8 @@
             <a href="LINK_DE_WHATSAPP" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
             </a>
-            <!-- Cambiar URL del icono de LinkedIn -->
             <a href="LINK_DE_LINKEDIN" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn">
             </a>
         </div>
     </div>
@@ -132,29 +131,38 @@
     <div class="contenedor">
         <h1>¡Hola! Soy Edwin</h1>
         <p>Estudiante de Ingeniería de Sistemas en la Universidad de Manizales.</p>
+        
+        <!-- Texto descriptivo -->
+        <div class="descripcion">
+            <p>
+                Soy Edwin Andrés García Hurtado, un estudiante comprometido de Ingeniería de Sistemas y Telecomunicaciones en la Universidad de Manizales, apasionado por la tecnología y el desarrollo de soluciones que mejoren los procesos y la toma de decisiones en diversas áreas. Desde que comencé mi carrera, he mostrado una actitud proactiva hacia el aprendizaje y la mejora continua, siendo un estudiante que se esfuerza por alcanzar un alto rendimiento académico y técnico.
+            </p>
+            <p>
+                Mis habilidades abarcan una amplia gama de conocimientos en programación y herramientas tecnológicas. Tengo experiencia en lenguajes de programación como Python, Java, JavaScript y C++, que me permiten desarrollar aplicaciones robustas y orientadas a objetos. Además, poseo conocimientos sólidos en bases de datos, específicamente en MySQL y PostgreSQL, lo que me permite diseñar y gestionar sistemas de almacenamiento de datos eficientes y optimizados para diferentes aplicaciones.
+            </p>
+            <p>
+                También tengo experiencia en redes y telecomunicaciones a través de Cisco, y en sistemas de información geográfica (SIG) mediante el uso de herramientas como ArcGIS, que me ayudan a analizar y visualizar datos espaciales. En el ámbito del análisis de datos, me apoyo en herramientas como Power BI para crear reportes interactivos y visualizaciones que faciliten la toma de decisiones basadas en datos.
+            </p>
+        </div>
+
         <h2>Mis habilidades</h2>
         <p>A continuación te muestro mis habilidades y el nivel de manejo que tengo en cada una:</p>
-        <!-- Barra de progreso para inglés -->
         <h3>Inglés - 70%</h3>
         <div class="barra">
             <div class="progreso" style="width: 70%;"><span>70%</span></div>
         </div>
-        <!-- Barra de progreso para alemán -->
         <h3>Alemán - 80%</h3>
         <div class="barra">
             <div class="progreso" style="width: 80%;"><span>80%</span></div>
         </div>
-        <!-- Barra de progreso para Python -->
         <h3>Python - 90%</h3>
         <div class="barra">
             <div class="progreso" style="width: 90%;"><span>90%</span></div>
         </div>
-        <!-- Barra de progreso para JavaScript -->
         <h3>JavaScript - 75%</h3>
         <div class="barra">
             <div class="progreso" style="width: 75%;"><span>75%</span></div>
         </div>
-        <!-- Barra de progreso para SQL -->
         <h3>SQL - 85%</h3>
         <div class="barra">
             <div class="progreso" style="width: 85%;"><span>85%</span></div>
@@ -165,7 +173,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        // Para animar las barras de progreso
         window.onload = function() {
             let barras = document.querySelectorAll('.progreso');
             barras.forEach(function(barra) {
@@ -177,7 +184,6 @@
             });
         };
 
-        // Gráfico de radar
         const ctx = document.getElementById('myChart').getContext('2d');
         const myChart = new Chart(ctx, {
             type: 'radar',
@@ -185,9 +191,9 @@
                 labels: ['Inglés', 'Alemán', 'Python', 'JavaScript', 'SQL'],
                 datasets: [{
                     label: 'Habilidades',
-                    data: [70, 80, 90, 75, 85], // Porcentajes de habilidades
-                    backgroundColor: 'rgba(255, 165, 0, 0.2)', // Color de fondo del gráfico
-                    borderColor: 'rgba(255, 165, 0, 1)', // Color de línea del gráfico
+                    data: [70, 80, 90, 75, 85],
+                    backgroundColor: 'rgba(255, 165, 0, 0.2)',
+                    borderColor: 'rgba(255, 165, 0, 1)',
                     borderWidth: 2
                 }]
             },
@@ -195,18 +201,8 @@
                 scale: {
                     ticks: {
                         beginAtZero: true,
-                        max: 100, // Máximo valor
-                        stepSize: 10, // Intervalo entre ticks
-                        color: 'white', // Cambiar color de los ticks
-                        font: {
-                            size: 14 // Cambiar tamaño de los ticks
-                        }
-                    },
-                    pointLabels: {
-                        color: 'white', // Cambiar color de las etiquetas
-                        font: {
-                            size: 16 // Cambiar tamaño de las etiquetas
-                        }
+                        max: 100,
+                        stepSize: 10
                     }
                 }
             }
@@ -215,5 +211,3 @@
 
 </body>
 </html>
-
-
