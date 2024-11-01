@@ -17,6 +17,7 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            overflow: hidden; /* Evitar desplazamiento no deseado */
         }
 
         /* Ventana rectangular flotante */
@@ -72,11 +73,18 @@
             transform: scale(1.1);
         }
 
-        /* Estilo para el gráfico de radar con tamaño fijo */
+        /* Estilo para el contenedor del gráfico de radar */
+        .grafico-container {
+            width: 400px; /* Ancho del gráfico */
+            height: 400px; /* Alto del gráfico */
+            margin: 0 auto; /* Centrar el contenedor */
+            position: relative; /* Posicionamiento relativo para evitar desplazamiento */
+        }
+
+        /* Estilo para el gráfico de radar */
         #myChart {
-            width: 400px;
-            height: 400px;
-            margin: 0 auto;
+            width: 100%; /* Hacer que el gráfico llene el contenedor */
+            height: 100%; /* Hacer que el gráfico llene el contenedor */
         }
     </style>
 </head>
@@ -106,7 +114,9 @@
     <div class="contenedor">
         <h1>¡Hola! Soy Edwin</h1>
         <h2>Mis habilidades</h2>
-        <canvas id="myChart"></canvas>
+        <div class="grafico-container">
+            <canvas id="myChart"></canvas>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -158,3 +168,4 @@
 
 </body>
 </html>
+
